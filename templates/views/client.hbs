@@ -5,29 +5,33 @@
     {{>header}}
 </head>
 <script src="https://kit.fontawesome.com/94b31d7673.js" crossorigin="anonymous"></script>
-  {{!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> --}}
+
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <body>
-    {{!-- {{>navbar}} --}}
 <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand"><div class="container m-0">
         <img src="https://scontent.fstv4-1.fna.fbcdn.net/v/t1.6435-9/135096585_1042982426201131_3067209410085214058_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=lPXn6cLhzlsAX92Jbja&_nc_oc=AQnmusyzCWDgjXvRVlnx3j7psSwISVVr5g9B70znws36X92LT_j6Q49RoM9w9DLOj9v8PVlrtTVlyrEPHQN7EbTn&_nc_ht=scontent.fstv4-1.fna&oh=00_AfDKuvOPzTbNjshRL62lAmPlCRsWbOnNNml-RaW5AmOtfw&oe=63E761E5"
             alt="" width="80" height="80">
     </div></a>
-
-    <form action="/admin"  method="get">
-        <button type="submit">all complaints</button>
-    </form>
-
-
-  <form class="form-inline" action="/search"  method="get">
-    <input class="form-control mr-sm-2" type="text" name="dsearch" placeholder="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
 </nav>
     
+    <h1>register your complaint here</h1>
+    <br>
+    <br>
+    <form action="/register"  method="get">
+        <button type="submit">register complaint</button>
+    </form> 
+    <br>
+    <br>
+    <br>
+    <br>
+{{!-- <h1>your complaints</h1> --}}
+
+ <form action="/client"  method="get">
+        <button type="submit">your</button>
+    </form> 
 
     <table class="table table-bordered">
         <thead class="table-success">
@@ -64,6 +68,7 @@
                 <a href="" class="btn border-shadow update">
                 <button class="btn btn-primary">send</button>
                 </a>
+
                 </td>
 
             </tr>

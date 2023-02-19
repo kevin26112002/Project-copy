@@ -3,12 +3,9 @@ const mongoose = require('mongoose');
 const loginSchema = new mongoose.Schema({
     Email: {
         type: String,
-        enum: ["chintan@gmail.com", "patelchintan@gmail.com"]
-    },
-    Password: {
-        type: String,
-        // enum: ["123"]
+        enum: ["kevinpaghadal3@gmail.com","chintan@gmail.com"]
     }
+  
 });
 
 const Login = new mongoose.model('Login', loginSchema);

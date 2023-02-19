@@ -27,6 +27,12 @@ module.exports.registerComplaint = function (newComplaint, callback) {
     newComplaint.save(callback);
 }
 
+// module.exports.getAllComplaints = function (callback) {
+//     Complaint.find(callback);
+// }
 module.exports.getAllComplaints = function (callback) {
     Complaint.find(callback);
+}
+module.exports.getAllsearch = function (callback) {
+    Complaint.find({$or:[{author:{'$regex':req.query.dsearch}},{books:{'$regex':req.query.dsearch}}]});
 }

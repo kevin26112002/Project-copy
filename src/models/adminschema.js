@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const adminloginSchema = new mongoose.Schema({
     Email: {
         type: String,
-        enum: ["20200025000@gmail.com"]
+        // enum: [""]
     },
     Password: {
         type: String,
